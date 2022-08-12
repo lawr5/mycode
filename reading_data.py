@@ -8,7 +8,7 @@ def main():
     pokedex = requests.get(f"{pokeapi}?limit=100000")
     pokedex = pokedex.json()
 
-    user_input = input("What's that pokemon: ")
+    user_input = input("What's that pokemon? ")
 
 
 
