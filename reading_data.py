@@ -8,13 +8,13 @@ def main():
     pokedex = requests.get(f"{pokeapi}?limit=100000")
     pokedex = pokedex.json()
 
-    user_input = input("What's that pokemon: ")
+    user_input = input("What's that pokemon? ")
 
 
 
     for pokemon in pokedex["results"]:
         if user_input == pokemon.get("name"):
-            print("It's " + pokemon.get("name"))
+            print(f'It\'s {pokemon.get("name")}!')
             #print(pokemon.get("url"))
 
             info = pokemon.get("url")
